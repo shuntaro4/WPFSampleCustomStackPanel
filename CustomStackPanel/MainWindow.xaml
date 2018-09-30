@@ -6,11 +6,12 @@
     xmlns:local="clr-namespace:CustomStackPanel"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="MainWindow"
-    Width="450"
-    Height="450"
+    Width="500"
+    Height="500"
     mc:Ignorable="d">
     <Grid Margin="10">
         <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
@@ -45,5 +46,17 @@
                 <TextBlock Text="あいうえお" />
             </StackPanel>
         </local:GroupPanel>
+        <local:GroupPanel2
+            Title="グループ3"
+            Grid.Row="2"
+            StyleColor="LightGreen">
+            <StackPanel>
+                <TextBlock x:Name="text31" Text="あいうえお" />
+                <TextBlock x:Name="text32" Text="あいうえお" />
+                <TextBlock x:Name="text33" Text="あいうえお" />
+                <TextBlock x:Name="text34" Text="あいうえお" />
+                <TextBlock x:Name="text35" Text="あいうえお" />
+            </StackPanel>
+        </local:GroupPanel2>
     </Grid>
 </Window>

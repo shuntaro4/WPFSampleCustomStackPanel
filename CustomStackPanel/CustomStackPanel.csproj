@@ -70,6 +70,7 @@
     <Compile Include="GroupPanel.xaml.cs">
       <DependentUpon>GroupPanel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GroupPanel2.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
