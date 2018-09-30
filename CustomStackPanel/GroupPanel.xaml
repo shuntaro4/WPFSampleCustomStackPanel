@@ -3,17 +3,20 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     x:Name="GroupPanelRoot">
-    <Border
-        Grid.Row="0"
-        BorderBrush="{Binding StyleColor, ElementName=GroupPanelRoot}"
-        BorderThickness="3">
-        <StackPanel>
-            <Label Content="{Binding Title, ElementName=GroupPanelRoot}" Foreground="{Binding StyleColor, ElementName=GroupPanelRoot}" />
-            <Border
-                Margin="5"
-                BorderBrush="{Binding StyleColor, ElementName=GroupPanelRoot}"
-                BorderThickness="0,0,0,2" />
-            <StackPanel Margin="10" />
-        </StackPanel>
-    </Border>
+    <UserControl.Template>
+        <ControlTemplate TargetType="UserControl">
+            <Border BorderBrush="{Binding StyleColor, ElementName=GroupPanelRoot}" BorderThickness="3">
+                <StackPanel>
+                    <Label Content="{Binding Title, ElementName=GroupPanelRoot}" Foreground="{Binding StyleColor, ElementName=GroupPanelRoot}" />
+                    <Border
+                        Margin="5"
+                        BorderBrush="{Binding StyleColor, ElementName=GroupPanelRoot}"
+                        BorderThickness="0,0,0,2" />
+                    <StackPanel Margin="10">
+                        <ContentPresenter Content="{TemplateBinding Content}" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </ControlTemplate>
+    </UserControl.Template>
 </UserControl>

@@ -36,6 +36,14 @@
         <local:GroupPanel
             Title="グループ2"
             Grid.Row="1"
-            StyleColor="IndianRed" />
+            StyleColor="IndianRed">
+            <StackPanel>
+                <TextBlock Text="あいうえお" />
+                <TextBlock Text="あいうえお" />
+                <TextBlock Text="あいうえお" />
+                <TextBlock Text="あいうえお" />
+                <TextBlock Text="あいうえお" />
+            </StackPanel>
+        </local:GroupPanel>
     </Grid>
 </Window>
